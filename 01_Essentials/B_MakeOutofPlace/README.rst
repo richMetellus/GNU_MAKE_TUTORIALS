@@ -2,10 +2,47 @@
 Makefile - Part 2
 #########################
 
-In this particlar Makefile
+In this particular example we have
 
-.. include:: ./Makefile 
+.. code-block:: 
 
+   tree B_MakeOutofPlace/
+   B_MakeOutofPlace/
+   ├── Makefile
+   ├── main.c
+   ├── random_num_generator.c
+   └── random_num_generator.h
+   
+   0 directories, 4 files
+
+The files have the original contents
+
+.. tabs::
+   
+   .. tab:: main.c
+      
+      .. literalinclude:: ./main.c
+         :language: c
+         :linenos:
+
+   .. tab:: random_num_generator.h
+      
+      .. literalinclude:: ./random_num_generator.h
+         :language: c
+         :linenos:
+
+   .. tab:: random_num_generator.c
+      
+      .. literalinclude:: ./random_num_generator.c
+         :linenos:
+
+   .. tab:: Makefile
+        
+      .. literalinclude:: ./Makefile
+
+
+With this particular Makefile we will have a separate folder to include all the
+build outputs.
 
 The default target is ``all`` so if you call *make* on the command line without
 option, this target will be the one that is called.
@@ -123,12 +160,11 @@ So how do we create these object files:
 
 
 
-
 *******************
 References
-*******************
+******************* 
 
-
-* https://www.youtube.com/watch?v=FkqQpBqkSns
-* chatGPT response
-* Stackoverflow querry
+..
+  * https://www.youtube.com/watch?v=FkqQpBqkSns
+  * chatGPT response
+  * Stackoverflow querry
